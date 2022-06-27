@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 
 //initialize app 
 const app = express();
+app.use(cors())
 
 const studentsController = require('./controllers/studentsController');
 
